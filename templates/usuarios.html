@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+
+    <div class="container">
+       <h1>USUARIOS</h1><br>
+       {% for usuario in lista_usuarios %}<!-- como estamos usando o flask ele permite usar comandos do python dentro do html, se fosse so html o comando for nao existe pra ele-->
+        <strong>{{usuario}}</strong>
+        <hr>
+       {% endfor %}<!-- se for usar uma variavel apenas coloca dentro das duas chaves, se for uma estrutura do python tem de colocar dentro dos  %  -->
+    </div>
+{% endblock %}
