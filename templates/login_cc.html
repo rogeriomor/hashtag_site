@@ -6,6 +6,8 @@
   <div class="row">
     <div class="col">
       <form method="POST" action="" class="border rounded border-info p-4 mt-2"><!-- isso aqui é do bootstrap classe border coloca uma borda-->
+        <!-- embaixo do form é que se coloca o token -->
+        {{ form_login.csrf_token }}
         <legend>LOGIN</legend> <!--aqui estava h1 trocou para legend que vai ser o titulo do formulario-->
         <fieldset> <!--Esse field set vai deixar todos os campos que o cara tem de preencher mais organizados -->
           <div class="form-group"> <!--isso aqui é classe do bootstrap -->
@@ -26,6 +28,8 @@
     </div>
     <div class="col">
       <form method="POST" action="" class="border rounded border-info p-4 mt-2"> <!--metodo POST é pra quando vamos enviar informações pro site, pra formularios sempres precisa isso-->
+        <!-- embaixo do form é que se coloca o token -->
+        {{ form_criarconta.csrf_token }}
         <legend>CRIAR CONTA</legend>
         <fieldset>
           <div class="form-group">
